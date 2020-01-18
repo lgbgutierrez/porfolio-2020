@@ -1,0 +1,109 @@
+.contenido {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+
+    h1 {
+        font-family: 'Ramabhadra', sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px rgb(0, 0, 0);
+        letter-spacing: 3px;
+        margin: 0.2em auto;
+        transition: all 0.5s ease-in;
+    }
+
+    h2 {
+        font-weight: normal;
+        margin: 0 auto;
+        letter-spacing: 5px;
+        text-shadow: 1px 1px 2px, 0 0 0.3em, 0 0;
+    }
+    
+    p {
+        margin: 0.5em auto;
+    }
+
+    .tarjeta {
+        background-color: #1f1f23;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        height: 35em;
+        width: 50em;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+        .panel-uno {
+            background-color: #2f2f35;
+            border-radius: 20px 0 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2em;
+            width: 50%;
+        }
+
+            img {
+                margin: 2em auto;
+                height: 10em;
+                width: 10em;
+            }
+
+        .panel-dos {
+            background-color: rgb(190, 190, 190);
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+            padding: 2em;
+            width: 100%;           
+        }
+
+            .contacto {
+                background-color: #2f2f3570;
+                border-radius: 20px;
+                justify-items: center;
+                padding: 1em;
+            }
+
+            .informacion-profesional {
+                justify-items: center;
+                text-align: left;
+            }
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .tarjeta {
+        height: 35em;
+        width: 25em;
+    }
+
+        .panel-uno {
+            padding: 0.5em;
+            margin: 0;
+            width: 25%;
+        }
+
+            img {
+                margin: 1em;
+                height: 5em;
+                width: 5em;
+            }
+}

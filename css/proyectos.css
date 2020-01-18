@@ -1,0 +1,100 @@
+.contenido {
+    display: flex;
+    flex-direction: column;
+    margin: 3em auto;
+    letter-spacing: 1px;
+}
+
+    h1 {
+        font-family: 'Ramabhadra', sans-serif;
+        font-size: 6rem;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px rgb(0, 0, 0);
+        letter-spacing: 3px;
+        margin: 0 auto;
+        transition: all 0.5s ease-in;
+    }
+
+.slideshow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+    .slideshow .prev, .slideshow .next {
+        color: rgb(126, 126, 126);
+        font-size: 50px;
+        margin: 0 1em;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    
+        .slideshow .prev:hover, .slideshow .next:hover {
+            color: white;
+            text-shadow: 1px 1px 2px, 0 0 1em, 0 0 0.2em;
+        }
+    
+    .slide {
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin: 2em 2em;
+        height: 20em;
+        width: 40em;
+        transition: all 0.5s;
+
+        -webkit-box-reflect: below 0 -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(80%, transparent), to(rgba(255, 255, 255, 0.1)));
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+        .slide:hover {
+            background-color: #1f1f235e;
+            transform: scale(1.05);
+        }
+
+    .dot {
+        background-color: rgb(126, 126, 126);
+        cursor: pointer;
+        height: 0.5em;
+        width: 0.5em;
+        margin: 0 2em;
+        border-radius: 50%;
+        display: inline-block;
+        transition: 0.5s ease;
+    }
+        
+        .dot:hover {
+            transform: scale(1.5);
+        }
+    
+        .active {
+            background-color: white;
+            box-shadow: 1px 1px 2px, 0 0 1em, 0 0 0.2em;
+            transform: scale(1.5);
+        }
+
+@media only screen and (max-width: 800px) {
+    .contenido {
+        margin: 9em auto;
+    }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+    .slideshow .prev, .slideshow .next {
+        display: none;
+    }
+
+    .slide {
+        margin: 2em auto;
+        height: 10em;
+        width: 20em;
+    }
+}

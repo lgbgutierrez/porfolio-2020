@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Questrial|Ramabhadra&display=swap&subset=latin-ext');
+
+body {
+    background-image: linear-gradient(to left, #232327, #1f1f23, #232327, #1f1f23, #1f1f23);
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    margin: 0;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* The Navbar conteiner */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+}
+
+    nav a {
+        color: rgb(126, 126, 126);
+        font-size: large;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+
+/* The brand name from the Navbar */
+.nav-marca {
+    display: flex;
+    width: 50%;
+    margin-left: 2em;
+    letter-spacing: 1px;
+}
+
+    .nav-marca span {
+        color: white;
+        letter-spacing: 2px;
+    }
+
+        .nav-marca a:hover {
+            color: rgb(75, 75, 75);
+            letter-spacing: 10px;
+            transition: all 0.2s;
+        }
+
+/* Links from the Navbar */
+.nav-links {
+    display: flex;
+    margin-right: 2em;
+    width: 50%;
+    justify-content: space-evenly;
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+    .nav-links a:hover {
+        color: white;
+        text-shadow: 1px 1px 2px, 0 0 1em, 0 0 0.2em;
+    }
+
+    .nav-links a:active {
+        color: rgb(126, 126, 126);
+    }
+
+/* Icon from Navbar */
+.nav-icono {
+    display: none;
+    cursor: pointer;
+}
+
+    .nav-icono:hover div {
+        background-color: white;
+        box-shadow: 1px 1px 2px, 0 0 1em, 0 0 0.2em;
+    }
+
+    .nav-icono:hover div:nth-child(1) {
+        transform: translateY(-0.2em);
+    }
+
+    .nav-icono:hover div:nth-child(3) {
+        transform: translateY(0.2em);
+    }
+
+    .nav-icono div {
+        background-color: white;
+        border-radius: 50px;
+        margin: 0.2em auto;
+        width: 2.5em;
+        height: 0.2em;
+        transition: all 0.5s;
+    }
+
+/* Mobile View */
+@media screen and (max-width: 800px) {
+    .navbar-mobile .nav-links {
+        display: none;
+    }
+
+    .navbar-mobile .nav-icono {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        position: absolute;
+        right: 2em;
+    }
+
+    /* Javascript: Action on Click */
+    .navbar-mobile.open .nav-links {
+        background-color: #d1d1d1;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+    }
+
+        .navbar-mobile.open .nav-links a {
+            font-size: xx-large;
+            font-weight: bolder;
+            letter-spacing: 7px;
+        }
+
+        .nav-links a:active {
+            color: rgb(231, 231, 231);
+        }
+
+    .navbar-mobile.open .nav-icono {
+        display: block;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .navbar-mobile.open .nav-icono div:nth-child(1) {
+        transform: translateY(0.40em) rotate(45deg);
+    }
+
+    .navbar-mobile.open .nav-icono div:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .navbar-mobile.open .nav-icono div:nth-child(3) {
+        transform: translateY(-0.40em) rotate(-45deg);
+    }
+}
