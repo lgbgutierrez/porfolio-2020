@@ -1,7 +1,7 @@
 .contenido {
     display: flex;
     flex-direction: column;
-    margin: 5em auto;
+    margin: 4em auto;
     letter-spacing: 1px;
 }
 
@@ -57,7 +57,7 @@
     padding: 15px 40px;
     border: none;
     border-radius: 20px;
-    margin: 3.8em auto 0 auto;
+    margin: 3.5em auto 0 auto;
     transition: all 0.2s;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
