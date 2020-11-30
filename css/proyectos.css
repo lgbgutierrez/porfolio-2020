@@ -90,10 +90,9 @@
     }
 
     .dot {margin:0 1em;}
-    .slide img {margin:0;}
-    .slide {
-        margin: 2em auto;
+    .slide img {
+        margin:0;
         height: 100%;
-        width: 100%;
+        width: 100%;  
     }
 }
