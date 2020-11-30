@@ -89,6 +89,7 @@
         display: none;
     }
 
+    .slide {margin:2em 4em;}
     .dot {margin:0 1em;}
     .slide img {
         margin:0;
