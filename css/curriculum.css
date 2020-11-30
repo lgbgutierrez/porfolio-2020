@@ -112,11 +112,7 @@
         width: 25em;
     }
 
-        .panel-uno {
-            padding: 0.5em;
-            margin: 0;
-            width: 25%;
-        }
+        .panel-dos {padding:30px;}
 
             img {
                 margin: 1em;
