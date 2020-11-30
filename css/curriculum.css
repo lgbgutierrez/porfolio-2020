@@ -102,10 +102,8 @@
         font-size: 0.9em;
     }
 
-    .contacto {
-        padding:16px 16px 8.8px 16px;
-        margin:60px auto;
-    }
+    .contacto {padding:16px 16px 8.8px 16px;}
+    .contenido {margin:60px auto;}
     
     .tarjeta {
         height: 15em;
