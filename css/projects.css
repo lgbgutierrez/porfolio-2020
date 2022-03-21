@@ -1,4 +1,4 @@
-.contenido {
+.content {
     display: flex;
     flex-direction: column;
     margin: 3em auto;
@@ -80,7 +80,7 @@
         }
 
 @media only screen and (max-width: 800px) {
-    .contenido {
+    .content {
         margin: 9em auto;
     }
         h1 {font-size: 3rem;}
