@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = [ "My goal is to become a UI/UX Designer.", "I make use of graphic design tools everyday.", "I do SEO and web optimization.", "My allies are html, css/sass and javascript.", "I'm currently learning React js.", "I'm a Front-End Web Developer."];
+    var dataText = [ "My dream job is to be part of a solid team.", "I make use of graphic design tools everyday.", "I follow up on SEO audits for web optimization.", "My allies are html, css/sass and javascript.", "I'm currently learning React.", "I'm a Front-End Web Developer."];
     
     function typeWriter(text, i, fnCallback) {
       if (i < (text.length)) {
